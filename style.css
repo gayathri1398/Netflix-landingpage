@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.nav__brand{
+    padding: 10px;
+}
+.nav__items{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__img{
+    width:120px;
+    height:100%;
+}
+.nav__img__net{
+    width: 100%;
+    height: 100%;
+}
+.nav__item{
+    display:flex;
+    gap:10px;
+    height: 50%;
+    margin-top: 20px;
+}
+#nav__item1{
+    background-color: rgb(3, 3, 3);
+    border: 1px solid rgb(255, 254, 254);
+    border-radius: 3px;
+    color: white;
+    padding: 2px;
+}
+#nav__item1:focus{
+    outline: none;
+}
+
+.nav__button__sign{
+    height: 100%;
+    width:100%;
+    background-color: red;
+    border:1px solid red;
+    border-radius: 2px;
+    padding: 2px;
+}
