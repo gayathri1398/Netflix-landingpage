@@ -90,8 +90,9 @@ body{
     gap: 7px;
     text-align: center;
     position: absolute;
-    top: 10rem;
+    top: 8rem;
     z-index: 11;
+    padding: 0px 27px;
     
 }
 .content__hero{
@@ -100,13 +101,42 @@ body{
 }
 
 .content__para{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
 }
 .content__bitpara{
     font-size: 18px;
     font-weight: 400;
     padding:0;
+}
+
+.text__input__holder{
+    position: absolute;
+    top: 21rem;
+    width: 90%;
+    height:50px;
+    margin: 0px 19px;
+    z-index: 10;
+  
+}
+.input__text{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+.input__text:focus{
+    outline: none;
+}
+.getstarted__button{
+    position: absolute;
+    top: 25rem;
+    width: 134px;
+    height: 39px;
+    transform:translate(95%,0%);
+    z-index: 11;
+    background-color: red;
+    color: white;
+    border: none;
 }
 
 @media (min-width:768px) {
@@ -140,12 +170,13 @@ body{
    top: 50%;
    width: 100%;
    left: 50%;
+   padding: 0px 158px;
    transform: translate(-50%, -50%);
 }
   
    .content__hero{
     font-weight: 600;
-    font-size: 60px;
+    font-size: 42px;
 }
 
 .content__para{
@@ -156,6 +187,16 @@ body{
     font-size: 18px;
     font-weight: 400;
     padding:0;
+}
+.text__input__holder{
+    top:30rem;
+    width:75%;
+    height: 61px;
+    margin-left: 85px;
+}
+.getstarted__button{
+    top:35rem;
+    transform: translateX(297px);
 }
 }
 @media (min-width:1024px) {
@@ -173,7 +214,25 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
-  
+    .text__input__holder{
+        top: 32rem;
+    }
+    
+    .input__text{
+        
+       width: 50%;
+       transform: translateX(48%);
+       height:70px;
+       font-size: 15px;
+
+    }
+    .getstarted__button{
+        height:70px;
+        top: 32rem;
+        margin-left: 40rem;
+        font-size: 20px;
+        
+    }
 }
 @media (min-width:1254px) {
    
