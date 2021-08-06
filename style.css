@@ -109,10 +109,10 @@ body{
     font-weight: 400;
     padding:0;
 }
-
+/* 
 .text__input__holder{
     position: absolute;
-    top: 21rem;
+    top: 22rem;
     width: 90%;
     height:50px;
     margin: 0px 19px;
@@ -129,7 +129,7 @@ body{
 }
 .getstarted__button{
     position: absolute;
-    top: 25rem;
+    top: 26rem;
     width: 134px;
     height: 39px;
     transform:translate(95%,0%);
@@ -137,6 +137,56 @@ body{
     background-color: red;
     color: white;
     border: none;
+} */
+.input__container{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:38px;
+    top:50%;
+    position : absolute;
+    z-index: 11;
+
+}
+.text__input__holder{
+    display: flex;
+    position:absolute;
+    z-index: 11;
+    width:100%;
+    height:49px;
+   
+
+}
+.input__text{
+    width:90%;
+    height:100%;
+    margin-left: 22px;
+
+}
+.emailadd{
+    position: absolute;
+    z-index: 11;
+    color:rgb(3, 3, 3,0.6);
+    top: 23%;
+    padding-left: 28px;
+    transition: 0.2s;
+    
+}
+.input__text:focus + .emailadd{
+    top:0.2rem;
+    font-size: 9px;
+}
+.getstarted__button{
+   position: absolute;
+   z-index: 11;
+   top: 60px;
+   width: 134px;
+   height: 39px;
+   transform:translate(95%,0%);
+   background-color: red;
+   color: white;
+   border: none;
+
 }
 
 @media (min-width:768px) {
@@ -188,7 +238,7 @@ body{
     font-weight: 400;
     padding:0;
 }
-.text__input__holder{
+/* .text__input__holder{
     top:30rem;
     width:75%;
     height: 61px;
@@ -196,6 +246,20 @@ body{
 }
 .getstarted__button{
     top:35rem;
+    transform: translateX(297px);
+} */
+.input__container{
+    top:29rem;
+ 
+}
+
+.text__input__holder{
+    width:75%;
+    height: 61px;
+    margin-left: 85px;
+}
+.getstarted__button{
+    top:5rem;
     transform: translateX(297px);
 }
 }
@@ -214,7 +278,13 @@ body{
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .text__input__holder{
+    /* .input__container{
+      
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    /* .text__input__holder{
         top: 32rem;
     }
     
@@ -232,6 +302,17 @@ body{
         margin-left: 40rem;
         font-size: 20px;
         
+    } */
+    .input__container{
+        width:70%;
+        flex-direction: row;
+        margin-left: 156px;
+    }
+    .getstarted__button{
+        height: 61px;
+        top: 0rem;
+        left: 18rem;
+       
     }
 }
 @media (min-width:1254px) {
