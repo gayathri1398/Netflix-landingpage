@@ -272,6 +272,63 @@ body{
     width:100%;
     margin-left: 72px;
 }
+.FAQ__container{
+    border-top: 8px solid rgb(54, 53, 53); 
+    padding-top: 30px;
+}
+
+.FAQ__accordian{
+    width: 100%;
+  
+}
+.FAQ__heading> h1{
+   text-align: center;
+   padding-bottom: 8px;
+}
+.FAQ__title__org{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 46px;
+    color: white;
+    background-color: #303030;
+    border:none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 12px;
+    margin-bottom: 4px;
+}
+.FAQ__description__visible{
+    margin: 2px 0px;
+    background-color: #303030;
+    border-top: 1px solid black;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+  }
+.FAQ__description__visible> p{
+  font-weight: 400;
+  padding: 12px;
+
+}
+.contact__section>p{
+    padding: 9px 40px;
+}
+.contact__section>.input__container{
+    position: relative;
+    padding: 3px 10px;
+
+}
+.contact__section>.emailadd{
+    font-size: 13px;
+}
+.contact__section> .input__container>.getstarted__button{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
 
 
 @media (min-width:768px) {
@@ -369,6 +426,27 @@ body{
    
     margin-left: 96px;
 }
+.FAQ__lists{
+    padding: 0px 63px;
+}
+.FAQ__heading>h1{
+    font-size:35px ;
+    padding-bottom: 22px;
+}
+.FAQ__title__org{
+    height:56px;
+}
+.contact__section>p{
+    padding: 22px 97px;
+    font-size: 19px;
+    text-align: center;
+}
+.contact__section>.input__container{
+    top: 0rem;
+}
+.contact__section>.input__container>.text__input__holder{
+   margin-left: 0px;
+}
 }
 @media (min-width:1024px) {
     .nav__img{
@@ -404,8 +482,7 @@ body{
        
         font-size: 20px;
     }
-    
-   
+
     .feature{
         padding: 0px 160px;
         border-top:  8px solid rgb(54, 53, 53);
@@ -429,6 +506,23 @@ body{
         padding-top: 40px;
         text-align: left;
     }
+    .FAQ__lists{
+        padding: 0px 20rem;
+    }
+    .FAQ__heading>h1{
+        font-size: 41px;
+    }
+    .FAQ__title__org{
+        height: 66px;
+        font-size: 23px;
+    }
+    .contact__section>.input__container{
+       top: 29px;
+     }
+     .contact__section>p{
+        padding: 31px 144px;
+        font-size: 20px;
+     }
    
 } 
 @media (min-width:1254px) {
